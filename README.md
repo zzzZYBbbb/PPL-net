@@ -82,7 +82,6 @@ You can run the following command
 python train.py --config-file experiments/pplnet_atrous.yaml --gpu 0
 ```
 to train a network.
-```
 
 ## 4. Inference with pretrained models
 - For testing, please run the following command
