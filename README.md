@@ -19,7 +19,7 @@ PPL-net is a line segment extraction method that combines point features and lin
 
 ### Precision and Recall Curves
 <p align="center">
-<img src="figures/PR curve.jpg"  width="650">
+<img src="figures/PR curve.jpg"  width="500">
 </p>
 
 ## Installation
