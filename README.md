@@ -1,28 +1,25 @@
 # PPL-net
 
 ## Introduction
-We reformulate the problem of line segment detection (LSD) as a coupled region coloring problem. Based on this new formulation, we can address the problem of LSD with convolutional neural networks.
+PPL-net is a line segment extraction method that combines point features and line features. It uses advanced feature extraction method based on convolutional networks, and then uses a point-line verification framework to solve the problem of over-extraction and local ambiguity.
 <p align="center">
-<img src="figures/our_method.png" height="400" width="400">
 <p>
 
 ## Results
 
-### F-Measure and FPS
+### Comparison of average results of five algorithms in data set
 
-| Methods | Wireframe Dataset | YorkUrban Dataset | FPS|
-|:-----:|:-----:|:-----:|:-----:|
+| Methods | AP | AR | F-measure| Number| Length| FPS|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 | [LSD](https://ieeexplore.ieee.org/document/4731268/) | 0.647 | 0.591 | 19.6|
-| [MCMLSD](http://www.elderlab.yorku.ca/wp-content/uploads/2016/12/Almazan_MCMLSD_A_Dynamic_CVPR_2017_paper.pdf) | 0.566 | 0.564 | 0.2 |
+| [EDlines](http://www.elderlab.yorku.ca/wp-content/uploads/2016/12/Almazan_MCMLSD_A_Dynamic_CVPR_2017_paper.pdf) | 0.566 | 0.564 | 0.2 |
 | [Linelet](https://github.com/NamgyuCho/Linelet-code-and-YorkUrban-LineSegment-DB)| 0.644 | 0.585 | 0.14|
-| [Wireframe Parser](https://github.com/huangkuns/wireframe)| 0.728 | 0.627 | 2.24|
-|**Ours (U-Net)**| **0.752** | **0.639** | **10.3**|
-|**Ours (a-trous)**| **0.773** | **0.646** | **6.6**|
+| [AFM](https://github.com/huangkuns/wireframe)| 0.728 | 0.627 | 2.24|
+|Ours| **0.752** | **0.639** | **10.3**|
 
 ### Precision and Recall Curves
 <p align="center">
-<img src="figures/PR-curve-wireframe.png"  width="250">
-<img src="figures/PR-curve-wireframe.png" width="250">
+<img src="figures/PR curve.jpg"  width="250">
 </p>
 
 ## Installation
