@@ -1,7 +1,7 @@
 # PPL-net
 
 ## Introduction
-We reformulate the problem of line segment detection (LSD) as a coupled region coloring problem. Based on this new formulation, we can address the problem of LSD with convolutional neural networks.
+PPL-net is a line segment extraction method that combines point features and line features. It uses an advanced feature extraction method based on convolutional networks, and then uses a point-line verification framework to solve the problem of over-extraction and local ambiguity.
 <p align="center">
 <img src="figures/our_method.png" height="400" width="400">
 <p>
