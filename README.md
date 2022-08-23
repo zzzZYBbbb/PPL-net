@@ -10,7 +10,7 @@ PPL-net is a line segment extraction method that combines point features and lin
 ### Comparison of average results of five algorithms in data set
 
 | Methods | AP | AR | F-measure| Number| Length| FPS|
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 | [LSD](https://ieeexplore.ieee.org/document/4731268/) | 0.647 | 0.591 | 19.6|
 | [EDlines](http://www.elderlab.yorku.ca/wp-content/uploads/2016/12/Almazan_MCMLSD_A_Dynamic_CVPR_2017_paper.pdf) | 0.566 | 0.564 | 0.2 |
 | [Linelet](https://github.com/NamgyuCho/Linelet-code-and-YorkUrban-LineSegment-DB)| 0.644 | 0.585 | 0.14|
