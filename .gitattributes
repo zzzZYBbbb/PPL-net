@@ -1,0 +1,5 @@
+*.ipynb linguist-language=python
+*.cpp linguist-language=C++
+*.hpp linguist-language=C++
+*.h linguist-language=C++
+*.yaml linguist-language=YAML
