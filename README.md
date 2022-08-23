@@ -76,20 +76,20 @@ In each yaml file, the SAVE_DIR is used to store the network weights and experim
 The TEST configuration is for outputing results in testing phase with different ways (e.g. save or display). We currently provide two output modes "display" and "save". 
 You can custom more output methods in [modeling/output/output.py](modeling/output/output.py). 
 
-## 3. Inference with pretrained models
+## 4. Inference with pretrained models
 The pretrained models for U-Net and atrous Residual U-Net can be downloaded from [this link](https://drive.google.com/file/d/1AnLWs91vQdsJm6jJhB7MAvbIIQc0hJL2/view?usp=sharing). Please place the weights into "<AFM_root>/experiments/unet/weight" and "<AFM_root>/experiments/atrous/weight" respectively. 
 
 - For testing, please run the following command
 
 ```
-python test.py --config-file experiments/afm_atrous.yaml --gpu 0
+python test.py --config-file experiments/pplnet_atrous.yaml --gpu 0
 ```
 
 
-## 4. Training
+## 3. Network
 Please run the following command 
 ```
-python train.py --config-file experiments/afm_atrous.yaml --gpu 0
+python train.py --config-file experiments/pplnet_atrous.yaml --gpu 0
 ```
-to train a network. To speedup training procedure, our code will save the generated attraction field maps into <AFM_root>/data/wireframe/.cache when you run training code in the first time.
+to train a network.
 ```
