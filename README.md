@@ -39,12 +39,15 @@ Check [INSTALL.md](INSTALL.md) for installation instructions.
 
 ## 1.Data preparation
 ### 1.1 Downloading data
-- Wireframe Dataset: https://github.com/huangkuns/wireframe
-- YorkUrban Dataset: http://www.elderlab.yorku.ca/resources/york-urban-line-segment-database-information/
-
-Please follow the above links to download Wireframe and YorkUrban datasets. For Wireframe dataset, we only need the file named pointlines.zip which contains images and line segment annotations for training and testing. 
-
-Once the files are downloaded, please unzip them into <AFM_root>/data/wireframe_raw and <AFM_root>/data/york_raw  respectively. The structures of wireframe_raw and york_raw folder are as follows:
+```
+cd data
+gdown 1T4_6Nb5r4yAXre3lf-zpmp3RbmyP1t9q -O wireframe.tar.xz
+tar xf wireframe.tar.xz
+rm wireframe.tar.xz
+cd ..
+```
+you can also download data from: https://github.com/huangkuns/wireframe
+Once the files are downloaded, please unzip them into ~/PPL-net/data/wireframe_raw. The structures of wireframe_raw are as follows:
 ```
 wireframe_raw/
     - pointlines/*.pkl
@@ -62,9 +65,7 @@ york_raw/
 ### 1.2. Data Pre-processing
 Please run the following commands
 ```
-cd <AFM_root>/data/
 python preparation_wireframe.py
-python preparation_york.py
 ```
 
 ## 2. Hyper-parameter configurations
