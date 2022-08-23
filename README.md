@@ -69,11 +69,10 @@ python preparation_wireframe.py
 ```
 
 ## 2. Hyper-parameter configurations
-We use the [YACS](https://github.com/rbgirshick/yacs) to control the hyper parameters. Our configuration files for U-Net [(afm_unet.yaml)](experiments/afm_unet.yaml) and a-trous Residual Unet [(afm_atrous.yaml)](experiments/afm_atrous.yaml) are saved in the "<AFM_root>/experiments" folder.
+We use the [YACS](https://github.com/rbgirshick/yacs) to control the hyper parameters.
 
-In each yaml file, the SAVE_DIR is used to store the network weights and experimental results. The weights are saved in SAVE_DIR/weights and the results are saved in SAVE_DIR/results/DATASET_name.
+In the yaml file, the SAVE_DIR is used to store the network weights and experimental results. The weights are saved in SAVE_DIR/weights and the results are saved in SAVE_DIR/results/DATASET_name.
 
-The TEST configuration is for outputing results in testing phase with different ways (e.g. save or display). We currently provide two output modes "display" and "save". 
 You can custom more output methods in [modeling/output/output.py](modeling/output/output.py). 
 
 ## 3. Network
