@@ -22,6 +22,17 @@ PPL-net is a line segment extraction method that combines point features and lin
 <img src="figures/PR curve.jpg"  width="500">
 </p>
 
+## Requirements:
+- conda
+- python 3.5
+- pytorch 1.0
+- cython
+- yacs
+- scikit-image
+- matplotlib
+- opencv
+-tensorflow-gpu==1.12
+
 ## Installation
 Check [INSTALL.md](INSTALL.md) for installation instructions.
 
