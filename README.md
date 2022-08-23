@@ -11,11 +11,11 @@ PPL-net is a line segment extraction method that combines point features and lin
 
 | Methods | AP | AR | F-measure| Number| Length| FPS|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| [LSD](https://ieeexplore.ieee.org/document/4731268/) | 0.647 | 0.591 | 19.6|
-| [EDlines](http://www.elderlab.yorku.ca/wp-content/uploads/2016/12/Almazan_MCMLSD_A_Dynamic_CVPR_2017_paper.pdf) | 0.566 | 0.564 | 0.2 |
-| [Linelet](https://github.com/NamgyuCho/Linelet-code-and-YorkUrban-LineSegment-DB)| 0.644 | 0.585 | 0.14|
-| [AFM](https://github.com/huangkuns/wireframe)| 0.728 | 0.627 | 2.24|
-|Ours| **0.752** | **0.639** | **10.3**|
+| [LSD](https://ieeexplore.ieee.org/document/4731268/) | 0.675 | 0.412 | 0.232| 788.37| 25.96| 18.88|
+| [EDlines](https://ieeexplore.ieee.org/document/6116138) | 0.746 | 0.521 | 0.222 | **957.36** | 27.78 | **36.59** |
+| [Linelet](https://ieeexplore.ieee.org/document/7926451)| 0.767 | 0.498 | 0.249| 955.91| 23.18| 0.09|
+| [AFM](https://ieeexplore.ieee.org/document/8954315)| 0.892 | 0.547 | 0.259| 606.17| **31.67**| 23.98|
+|Ours| **0.906** | **0.569** | **0.278**| 661.22| 29.65| 24.06|
 
 ### Precision and Recall Curves
 <p align="center">
